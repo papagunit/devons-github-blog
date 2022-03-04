@@ -1,104 +1,13 @@
 ---
 toc: true
 layout: post
-description: A minimal example of using markdown with fastpages.
+description: This is tedious
 categories: [markdown]
 comments: true
-title: An Example Markdown Post
+title: What it takes to set up an automated, freely hosted blog
 ---
 # Example Markdown Post
 
-## Basic setup
+I'm not good at markdown, but wow this thing was a pain to get configured. Even created an issue just for the main issue I was running into, which baffled me at first but I stuck to my guns and read through the whole error stack to see what the root cause of the error was, rather than what it just stated. I suspect it is some dependency issue, and the author has not tested with the latest version of the minima theme. The problem is that the '''theme-remote''' flag always gets the latest version, but for some reason that doesn't mean the committer has tested it? I'm not sure at the moment, but I reverted to an older commit and it's working fine now.
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-filename.md`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `filename` is whatever file name you choose, to remind yourself what this post is about. `.md` is the file extension for markdown files.
-
-The first line of the file should start with a single hash character, then a space, then your title. This is how you create a "*level 1 heading*" in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line `## File names` above.
-
-## Basic formatting
-
-You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
-
----
-
-## Lists
-
-Here's a list:
-
-- item 1
-- item 2
-
-And a numbered list:
-
-1. item 1
-1. item 2
-
-## Boxes and stuff
-
-> This is a quotation
-
-{% include alert.html text="You can include alert boxes" %}
-
-...and...
-
-{% include info.html text="You can include info boxes" %}
-
-## Images
-
-![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
-
-## Code
-
-You can format text and code per usual 
-
-General preformatted text:
-
-    # Do a thing
-    do_thing()
-
-Python code and output:
-
-```python
-# Prints '2'
-print(1+1)
-```
-
-    2
-
-Formatting text as shell commands:
-
-```shell
-echo "hello world"
-./some_script.sh --option "value"
-wget https://example.com/cat_photo1.png
-```
-
-Formatting text as YAML:
-
-```yaml
-key: value
-- another_key: "another value"
-```
-
-
-## Tables
-
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
-
-
-## Tweetcards
-
-
-
-
-## Footnotes
-
-
-
-[^1]: This is the footnote.
-
+To be continued
